@@ -15,12 +15,12 @@ def Density(Diagramme_fondamental,ti,xi,weak_cond):
         return "t et x sont de dimensions differentes"
     
     k = np.array( math.inf*np.ones(t.shape) )   #Matrice representant les densités à chaque abscisse discretisee
-    t0 = weak_cond(1)
-    t1 = weak_cond(2)
-    x0 = weak_cond(3)
-    x1 = weak_cond(4)
-    m = weak_cond(5)
-    n0 = weak_cond(6)
+    t0 = weak_cond[0]
+    t1 = weak_cond[1]
+    x0 = weak_cond[2]
+    x1 = weak_cond[3]
+    m = weak_cond[4]
+    n0 = weak_cond[5]
     
     if t1 == t0:
         k1 = 0
